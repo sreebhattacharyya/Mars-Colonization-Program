@@ -12,7 +12,7 @@
     <header>
 
         <h2>Welcome on the journey to the Red Planet!</h2>
-        <h3><img src = "astronaut-final.jpg" alt="Astronaut!" id = "astronaut" >    Have fun with Tic-Tac-Toe   <img src = "robot.jpg" alt="Robot!" id = "robot" ></h3>
+        <h3><img src = "astronaut-final.jpg" alt="Astronaut!" id = "astronaut">    Have fun with Tic-Tac-Toe   <img src = "robot.jpg" alt="Robot!" id = "robot" ></h3>
     </header>
     <main>
         <div id = "selection_page">
@@ -71,28 +71,24 @@
                     <h2>Choose a difficulty between 1 and 5:</h2>
                     <div>
                         <input type = "radio" id = "1" name = "select" value = "1">
-                        <label for = "1">1</label>
+                        <label for = "1">Easy</label>
                     </div>
                     <div>
                         <input type = "radio" id = "2" name = "select" value = "2">
-                        <label for = "2">2</label>
-                    </div>
-                    <div>
-                        <input type = "radio" id = "3" name = "select" value = "3">
-                        <label for = "3">3</label>
-                    </div>
-                    <div>
-                        <input type = "radio" id = "4" name = "select" value = "4">
-                        <label for = "4">4</label>
+                        <label for = "2">Medium</label>
                     </div>
                     <div>
                         <input type = "radio" id = "5" name = "select" value = "5" checked>
-                        <label for = "5">5</label>
+                        <label for = "5">Difficult</label>
                     </div>
                 </div>
                 <button type = "button" class = "start" id = "startgame" onclick = "displayController.startGame()">Start</button>
         </div>
         <div id = "gamepage">
+            <div id = "suggestion">
+                <button type = "button" id = "suggest-button" class = "suggest" onclick="displayController.suggest()">Show Suggestion</button>
+                <p id = "suggestion-message"></p>
+            </div>
             <div id = "game-board">
                 <div class = "cell 0" id = "cell0"></div>
                 <div class = "cell 1" id = "cell1"></div>
